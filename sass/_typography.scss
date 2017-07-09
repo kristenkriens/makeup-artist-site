@@ -1,0 +1,69 @@
+/* links */
+a {
+	color: $dark-color;
+	text-decoration: none;
+	transition: color 0.3s, background-color 0.3s;
+	outline: 0;
+	&:hover, &:active, &:focus {
+		color:$accent-color;
+	}
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-fancy-stack-primary;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size:24px;
+}
+
+/* paragraphs */
+p {
+	line-height: 1.5;
+}
+
+/*blockquotes*/
+blockquote {
+	background: $light-color;
+	margin: 0;
+	padding: 20px;
+	p {
+		margin-top: 0;
+	}
+}
+
+/*tables*/
+table {
+	td {
+		padding: 10px;
+	}
+	tr td:first {
+		padding-right: 0;
+	}
+}
+
+/*def lists*/
+dt {
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+dd {
+	padding: 10px;
+	margin-left: 10px;
+}
+
+/*lists*/
+ul li, ol li {
+	padding: 3px;
+}
+
+/*PRE*/
+pre {
+	background: $light-color;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid $medium-color;
+}

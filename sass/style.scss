@@ -1,0 +1,232 @@
+/*!
+* Theme Name: Makeup Artist Theme
+* Theme URI: http://kristenkriens.com;
+* Description: Theme for makeup artists. Created by Kristen Kriens using the WordPress starter theme from HackerYou.
+* Version: 1.0
+* Author: Kristen Kriens
+* Author URI: http://kristenkriens.com
+*/
+
+@import 'normalize';
+@import 'variables';
+@import 'typography';
+@import 'blog';
+@import 'comments';
+@import 'home';
+@import 'services';
+@import 'portfolio';
+@import 'header';
+@import 'footer';
+
+
+/*
+====================================
+Default Styling
+====================================
+*/
+
+html, body {
+	height:100%;
+}
+
+body {
+	background-color:$light-color;
+	font-family: $font-base-stack;
+	color:$dark-color;
+	display:none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display:flex;
+	flex-wrap:wrap;
+	padding:0 15px;
+}
+
+.main .container {
+	padding:50px 15px;
+}
+
+.wpcf7-form {
+	display:flex;
+	flex-wrap:wrap;
+	input, textarea {
+		margin-bottom:30px;
+		width:100%;
+	}
+	textarea {
+		height:215px;
+	}
+}
+
+input, textarea, select {
+	background-color:white;
+	font-weight:300;
+	color:#999;
+	font-size:14px;
+	border:none;
+	outline:none;
+	padding:15px 20px;
+}
+
+textarea {
+	resize:none;
+}
+
+input[type="submit"] {
+	background-color:$accent-color;
+	padding:15px 30px;
+	color:$light-color;
+	margin-bottom:0;
+	transition: background-color 0.3s;
+	&:hover {
+		background-color:$dark-color;
+	}
+}
+
+::-webkit-input-placeholder {
+	color:#999;
+}
+
+::-moz-placeholder {
+	color:#999;
+}
+
+:-ms-input-placeholder {
+	color:#999;
+}
+
+:-moz-placeholder {
+	color:#999;
+}
+
+
+/* CONTACT FORM 7 */
+img.ajax-loader {
+	display:none;
+}
+
+div.wpcf7-validation-errors {
+	border:none;
+}
+
+div.wpcf7-response-output {
+	margin-top:30px;
+	font-weight:300;
+	width:100%;
+	text-align:center;
+}
+
+span.wpcf7-not-valid-tip {
+	display:none;
+}
+
+/* LIGHTBOX */
+.tos-desktop .tos-wrapper.tos-fixed.tos-fit.tos-has-bullets.tos-has-caption .tos-slide {
+	padding:0;
+}
+
+.tos-desktop .tos-wrapper.tos-fixed {
+	background-color:rgba(0,0,0,0.6);
+}
+
+.tos-prev, .tos-next, .tos-close {
+	background-color:transparent;
+}
+
+.tos-prev span, .tos-next span {
+	width:25px;
+	height:25px;
+}
+
+.tos-close span:before, .tos-close span:after {
+	width:10px;
+	height:10px;
+	margin-right:1px;
+}
+
+
+/* SOCIAL SHARE */
+.heateor_sss_sharing_container, .heateor_sss_horizontal_sharing {
+	margin:25px 0;
+}
+
+.heateor_sss_sharing_title {
+	margin-bottom:10px;
+}
+
+.heateor_sss_horizontal_sharing, .heateorSssSharing {
+	transition:0.3s background-color;
+}
+
+
+/* 404 PAGE */
+.error404 {
+	text-align:center;
+	.main {
+		min-height:calc(100vh - 184px);
+		display:flex;
+		flex-wrap:wrap;
+		align-items:center;
+		padding:15px;
+		.container {
+			display:block;
+			padding:15px;
+			h2, h3 {
+				margin:0;
+			}
+			h2 {
+				font-size:75px;
+			}
+			h3 {
+				font-size:30px;
+			}
+			a {
+				color:$accent-color;
+				&:hover, &:active, &:focus {
+					opacity:0.8;
+				}
+			}
+			#searchform {
+				max-width:500px;
+				margin:25px auto 0 auto;
+			}
+		}
+	}
+}
+
+
+// /* WORDPRESS SPECIFIC STYLES */
+// .aligncenter {
+// 	text-align: center;
+// 	margin: 0 auto;
+// }
+
+// .alignleft {
+// 	float: left;
+// }
+
+// .alignright {
+// 	float: right;
+// 	text-align:right;
+// }
+
+// img {
+// 	&.alignleft {
+// 		padding-right: 5px;
+// 	}
+// 	&.alignright {
+// 		padding-left: 5px;
+// 	}
+// }
+
+// .clear {
+// 	width: 100%;
+// 	float: left;
+// 	clear: both;
+// }

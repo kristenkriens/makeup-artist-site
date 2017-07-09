@@ -1,0 +1,47 @@
+footer {
+	clear: both;
+	background-color:$dark-color;
+	font-weight:300;
+	padding:15px;
+	font-size:14px;
+	& .container {
+		color:$light-color;
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		position:relative;
+		p, img {
+			opacity:0.3;
+		}
+		.logo {
+			height:38px;
+			position:absolute;
+			left:50%;
+			transform:translateX(-50%);
+			img {
+				max-width:75px;
+				max-height:38px;
+				@media (max-width:480px) {
+					display:none;
+				}
+			}
+		}
+		p {
+			@media (max-width:350px) {
+				text-align:center;
+				margin:0 auto;
+				width:100%;
+			}
+		}
+		a {
+			color:$accent-color;
+			@media (max-width:350px) {
+				text-align:center;
+				margin:10px auto 0 auto;
+			}
+			&:hover {
+				opacity:0.8;
+			}
+		}
+	}
+}

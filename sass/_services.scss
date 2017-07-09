@@ -1,0 +1,75 @@
+.services {
+	background-color:$dark-color;
+	color:$light-color;
+	.services-content {
+		display:flex;
+		justify-content:space-around;
+		flex-wrap:wrap;
+		width:100%;
+		.services-image {
+			margin:15px;
+			width:250px;
+			img {
+				border-radius:50%;
+				text-align:center;
+			}
+		}
+		h3 {
+			text-align:center;
+			font-family:$font-fancy-stack-secondary;
+			font-weight:400;
+			font-size:20px;
+		}
+	}
+}
+
+.pricing {
+	background-image:url(http://kristenkriens.com/makeup-artist-site/wp-content/uploads/2016/08/lipstick-bottom-image.jpg);
+	background-repeat:repeat-x;
+	background-position:center bottom;
+	background-size:500px;
+	padding-bottom:200px;
+	@media (max-width:650px) {
+		background-image:none;
+		padding-bottom:0;
+	}
+	.pricing-content {
+		display:flex;
+		flex-wrap:wrap;
+		.pricing-content-left, .pricing-content-right {
+			width:calc(50% - 30px);
+			margin:15px;
+			@media (max-width:650px) {
+				width:calc(100% - 30px);
+				margin-top:0;
+				margin-bottom:0;
+			}
+			h3 {
+				font-family:$font-fancy-stack-secondary;
+				font-weight:400;
+				font-size:20px;
+				margin-top:15px;
+				margin-bottom:5px;
+			}
+			.pricing-category {
+				padding-bottom:25px;
+			}
+			.pricing-category-info {
+				display:flex;
+				flex-wrap:wrap;
+				p {
+					margin:0;
+					border-bottom:1px solid $medium-color;
+					padding:10px 0;
+					&.title {
+						width:65%;
+					}
+					&.price {
+						width:35%;
+						text-align:right;
+					}
+				}
+			}
+		}
+	}
+}
