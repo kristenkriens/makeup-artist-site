@@ -51,19 +51,21 @@
                     ?>
                     <div class="pricing-category">
                       <h3><?php the_sub_field('pricing_category_left_title'); ?></h3>
-                      <div class="pricing-category-info">
+                      <ul class="pricing-category-info">
                         <?php
                           if(have_rows('pricing_category_left_info')) {
                             while(have_rows('pricing_category_left_info')) {
                               the_row();
                               ?>
-                              <p class="title"><?php the_sub_field('pricing_item_left_title'); ?></p>
-                              <p class="price"><?php the_sub_field('pricing_item_left_price'); ?></p>
+                              <li class="clearfix">
+                                <p class="title"><?php the_sub_field('pricing_item_left_title'); ?></p>
+                                <p class="price"><?php the_sub_field('pricing_item_left_price'); ?></p>
+                              </li>
                               <?php
                             } // end while
                           } // end if
                         ?>
-                      </div>
+                      </ul>
                     </div>
                     <?php
                   } // end while
@@ -78,19 +80,21 @@
                     ?>
                     <div class="pricing-category">
                       <h3><?php the_sub_field('pricing_category_right_title'); ?></h3>
-                      <div class="pricing-category-info">
+                      <ul class="pricing-category-info">
                         <?php
                           if(have_rows('pricing_category_right_info')) {
                             while(have_rows('pricing_category_right_info')) {
                               the_row();
                               ?>
-                              <p class="title"><?php the_sub_field('pricing_item_right_title'); ?></p>
-                              <p class="price"><?php the_sub_field('pricing_item_right_price'); ?></p>
+                              <li class="clearfix">
+                                <p class="title"><?php the_sub_field('pricing_item_right_title'); ?></p>
+                                <p class="price"><?php the_sub_field('pricing_item_right_price'); ?></p>
+                              </li>
                               <?php
                             } // end while
                           } // end if
                         ?>
-                      </div>
+                      </ul>
                     </div>
                     <?php
                   } // end while

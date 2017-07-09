@@ -57,16 +57,24 @@
 			.pricing-category-info {
 				display:flex;
 				flex-wrap:wrap;
-				p {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li {
 					margin:0;
 					border-bottom:1px solid $medium-color;
 					padding:10px 0;
-					&.title {
-						width:65%;
-					}
-					&.price {
-						width:35%;
-						text-align:right;
+					width: 100%;
+					p {
+						float: left;
+						margin: 0;
+						&.title {
+							width:65%;
+						}
+						&.price {
+							width:35%;
+							text-align:right;
+						}
 					}
 				}
 			}
