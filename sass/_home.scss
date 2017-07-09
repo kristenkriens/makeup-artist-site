@@ -8,13 +8,14 @@
 			font-family:$font-fancy-stack-secondary;
 			letter-spacing:5px;
 			font-size:20px;
-			margin-bottom:-25px;
+			margin-bottom:-15px;
 			font-weight:400;
 		}
 		.title-2 {
 			color:$dark-color;
 			font-family:$font-fancy-stack-primary;
 			font-size:50px;
+			line-height: 1;
 			text-transform:lowercase;
 			&.light {
 				color:$light-color;
