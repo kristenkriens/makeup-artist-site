@@ -13,6 +13,8 @@
 
 <body <?php body_class(); ?>>
 
+<a href="#main" class="skipnav accessible">Skip to Main Content</a>
+
 <?php global $post; ?>
 <?php
 $img = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
@@ -23,6 +25,7 @@ $img = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 560
 }?>
 <header style="background-image: url(<?php echo $img[0]; ?> );">
   <div class="navigation-bar">
+    <h1 class="accessible"><?php  wp_title('|', true, 'right'); ?></h1>
     <div class="container">
       <div class="logo">
         <?php the_custom_logo() ?>
@@ -52,4 +55,3 @@ $img = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 560
     </div>
   </div> <!-- /.container -->
 </header><!--/.header-->
-

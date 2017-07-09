@@ -13,12 +13,15 @@
 
 <body <?php body_class(); ?>>
 
+<a href="#main" class="skipnav accessible">Skip to Main Content</a>
+
 <?php global $post; ?>
 <?php
 $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
 ?>
 <header style="background-image: url(<?php echo $src[0]; ?> );" class="front">
   <div class="navigation-bar">
+		<h1 class="accessible"><?php  wp_title('|', true, 'right'); ?></h1>
     <div class="container">
       <div class="logo">
         <?php the_custom_logo() ?>
@@ -46,4 +49,3 @@ $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 560
     <i class="fa fa-angle-down" aria-hidden="true"></i>
   </div>
 </header><!--/.header-->
-
