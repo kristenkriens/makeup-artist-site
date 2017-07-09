@@ -55,6 +55,12 @@ img {
 .wpcf7-form {
 	display:flex;
 	flex-wrap:wrap;
+	&-control:not(.wpcf7-submit) {
+		&:active, &:focus {
+			border: 2px solid $accent-color;
+			padding: 13px 18px;
+		}
+	}
 	input, textarea {
 		margin-bottom:30px;
 		width:100%;
@@ -84,7 +90,7 @@ input[type="submit"] {
 	color:$light-color;
 	margin-bottom:0;
 	transition: background-color 0.3s;
-	&:hover {
+	&:hover, &:active, &:focus {
 		background-color:$dark-color;
 	}
 }
